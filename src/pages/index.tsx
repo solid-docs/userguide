@@ -20,16 +20,16 @@ function HomepageHeader() {
             private and secure in your own Solid Pod.
           </p>
           <div className={styles.buttons}>
-            <Link
+            <a
               className="button button--secondary button--lg"
-              to="/getting-started/introduction">
-              Get Started
-            </Link>
+              href="https://solid-docs.github.io/docs/browser/">
+              Try Live Demo
+            </a>
             <Link
               className="button button--outline button--lg"
               style={{color: 'white', borderColor: 'white'}}
-              to="/views/overview">
-              Explore Features
+              to="/getting-started/introduction">
+              Get Started
             </Link>
           </div>
         </div>
