@@ -22,7 +22,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <a
               className="button button--secondary button--lg"
-              href="https://solid-docs.github.io/docs/browser/">
+              href="https://solidos.org/docs/browser/">
               Try Live Demo
             </a>
             <Link

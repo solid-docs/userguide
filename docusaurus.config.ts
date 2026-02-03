@@ -11,7 +11,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://solid-docs.github.io',
+  url: 'https://solidos.org',
   baseUrl: '/userguide/',
 
   organizationName: 'solid-docs',
@@ -102,7 +102,7 @@ const config: Config = {
             },
             {
               label: 'Developer Docs',
-              href: 'https://solid-docs.github.io/docs/',
+              href: 'https://solidos.org/docs/',
             },
             {
               type: 'html',
@@ -161,7 +161,7 @@ const config: Config = {
           title: 'More',
           items: [
             {label: 'SolidOS GitHub', href: 'https://github.com/SolidOS'},
-            {label: 'Developer Docs', href: 'https://solid-docs.github.io/docs/'},
+            {label: 'Developer Docs', href: 'https://solidos.org/docs/'},
             {label: 'Contribute', href: 'https://github.com/solid-docs/userguide'},
           ],
         },

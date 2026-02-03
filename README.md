@@ -2,7 +2,7 @@
 
 User documentation for the SolidOS Databrowser - learn to manage your data, connect with contacts, and control access to your Solid Pod.
 
-**Live site:** https://solid-docs.github.io/userguide/
+**Live site:** https://solidos.org/userguide/
 
 ## Development
 
