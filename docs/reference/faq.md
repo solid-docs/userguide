@@ -68,7 +68,7 @@ You are not logged in, or you are not allowed to write to this folder.
 
 ### Why won't my folder open after I created something in it?
 
-If you gave the new thing a name with a space in it, some servers list the folder incorrectly and it can no longer be loaded. Use hyphens instead of spaces in names. See [Creating Data](../getting-started/creating-data.md).
+If you gave the new thing a name with a space in it, some servers list the folder incorrectly and it can no longer be loaded. JavaScript Solid Server did this before version 0.0.231; upgrading the server makes the folder load again. If you cannot tell which server or version your pod runs on, use hyphens instead of spaces in names. See [Creating Data](../getting-started/creating-data.md).
 
 ### How do I delete something?
 

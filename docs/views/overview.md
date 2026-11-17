@@ -55,7 +55,7 @@ In a folder, click **Add**. The menu lists what you can create there. With no us
 
 ![The Add menu with Power user chosen](/img/ug-views/add-menu-power-user.png)
 
-Each choice asks for a name and adds the new item to the folder. Use a name without spaces: on the test pod used for this guide, a name with spaces stopped the folder from loading.
+Each choice asks for a name and adds the new item to the folder. A name without spaces is the safe choice: on some servers a name with a space stops the folder from loading (see [Creating Data](/getting-started/creating-data)).
 
 Opening something that already exists, such as a notepad or a meeting, works without Power user.
 

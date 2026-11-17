@@ -31,8 +31,8 @@ You can add things to any folder you are allowed to write to, and delete things 
 
    ![The New Folder dialog](/img/ug-basics/new-folder-dialog.png)
 
-:::warning Use names without spaces
-Use letters, numbers and hyphens, for example `holiday-photos`. SolidOS shows hyphens as spaces, so this folder is listed as "holiday photos". A name typed with a space can produce an address that some servers list incorrectly, after which the folder that holds it may fail to load.
+:::note Names without spaces are the safe choice
+Use letters, numbers and hyphens, for example `holiday-photos`. SolidOS shows hyphens as spaces, so this folder is listed as "holiday photos". On some servers a name typed with a space is listed incorrectly, after which the folder that holds it fails to load. JavaScript Solid Server did this before version 0.0.231.
 :::
 
 ### What happens next
