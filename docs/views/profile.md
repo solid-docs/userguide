@@ -1,64 +1,60 @@
 ---
 sidebar_position: 9
 title: Profile
-description: User Guide for the Profile view
+description: View a public profile, and edit your own
 ---
 
-# Profile View
+# Profile
 
-The Profile view displays the public Profile for a WebID and lists their public friends.
+A profile is the public page of a person on Solid. Its address is the person's WebID. When you open a WebID, SolidOS shows the Profile view.
 
-![Profile View](/img/views/profile/Profile_View.png)
+![The public profile of the SolidOS test account on mashlib.com](/img/ug-views/profile-public.png)
 
-## Available Icons
+## What a profile shows
 
-Several icons are displayed:
+- **Heading**: photo, name, and job title with organisation.
+- **Bio**.
+- **Resume**: roles with organisation and dates.
+- **Projects & Communities**.
+- On the right: **Follow me on** (links to the person's accounts elsewhere), **Skills**, **Languages** and **More Contacts** (for example an address).
+- **QR code** with **Add to Contacts**: a code containing the person's contact card and profile address, for a phone to scan.
 
-- ![About](https://solidos.github.io/solid-ui/src/originalIcons/about.png) **About** - Display information regarding the Profile
-- ![Contact Profile](https://solidos.github.io/solid-ui/src/icons/noun_15059.svg) **Contact** - Display the Contact view of the Profile
-- ![Person Profile](https://solidos.github.io/solid-ui/src/icons/noun_99101.svg) **Person** - Display the Person view of the Profile
-- ![Friends](https://solidos.github.io/solid-ui/src/originalIcons/foaf/foafTiny.gif) **Friends** - Display public friends together with a link allowing the Profile to be viewed as a basic data resource
-- ![Source](https://solidos.github.io/solid-ui/src/icons/noun_109873.svg) **[Source](/views/source)** - Display the source of the Profile
-- ![Under the Hood](https://solidos.github.io/solid-ui/src/originalIcons/tango/22-emblem-system.png) **[Under the Hood](/views/underthehood)** - Access advanced functionality
+An empty section says so, for example "No projects added yet."
 
-:::tip
-If you have edit permission to the Profile, you can edit the Profile in both the Contact and Person views.
-:::
+![The lower part of the profile, with the QR code](/img/ug-views/profile-public-lower.png)
 
-## Friends
+To try it, open [the test profile on mashlib.com](https://mashlib.com/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2Fprofile%2Fcard%23me). You do not need to log in.
 
-Any public friends of the WebID are displayed on the Friends view, together with a link allowing the Profile to be viewed as a basic data resource:
+## Show your own profile
 
-![Friends View](/img/views/profile/Friends_View.png)
+Log in, click your picture at the top right, and choose **Profile**.
 
-### Add Public Friends
+## Edit your profile
 
-If you have edit permission to the Profile, you can add more public Friends by dragging a WebID onto the Basic Information ![Target](https://solidos.github.io/solid-ui/src/icons/noun_748003.svg) target.
+When you look at your own profile while logged in, every section has an **Edit** or **Add More** link, and empty sections have a button such as **Add Resume** or **Add Project**.
 
-### Remove Public Friends
+### Name, photo and contact details
 
-If you have edit permission to the Profile, you can remove public Friends by:
+Click **Edit** at the top right of the heading. The **Edit Heading** dialog has:
 
-1. Hover the mouse pointer over the ![Goto This](https://solidos.github.io/solid-ui/src/originalIcons/go-to-this.png) Goto This icon next to the friend's Profile image/name.
-2. A ![Remove](https://solidos.github.io/solid-ui/src/icons/noun_2188_red.svg) Remove icon is displayed.
-3. Click the Remove icon to remove the friend.
+- **Profile Photo**: **Upload**, **Remove**, and a camera button to take a photo.
+- **Full Name**, **Nickname**, **Pronouns** and **DOB** (date of birth).
+- **Mobile Number** and **Email**, each with a type list.
+- **Street Address**, **Locality**, **Postal Code**, **Region** and **Country**.
 
-## Show Your Profile
+Click **Save Changes** to save, or **Cancel**.
 
-To view your profile as other people will see it:
+![The Edit Heading dialog](/img/ug-views/profile-edit-heading.png)
 
-1. Select **Show your profile** from the dropdown menu in the top-right corner.
-2. Your public profile is displayed in the Profile view.
+### Skills and other lists
 
-## Edit Your Profile
+Click **Add More** beside **Skills**. Type at least two letters: SolidOS suggests skills from the ESCO list, or you can keep your own words. Pick one and click **Save Changes**. **+ Add More** adds another row, and the delete button beside a row removes it.
 
-You can setup a public profile that will be visible to visitors to your Pod.
+![Adding a skill, with suggestions](/img/ug-views/profile-skills.png)
 
-To edit your public profile:
+**Languages**, **Follow me on** and **Contact Info** have their own **Add More** links, and **Bio** has an **Edit** link.
 
-1. Select **Edit your profile** from the dropdown menu.
-2. In the Profile page, enter/select:
-   - One or more Profile photos by dragging-and-dropping an image file onto the photo panel
-   - Contact information about yourself that you want to make public. You can add multiple Addresses, Phones, and Emails
-   - Public contacts by dragging-and-dropping WebIDs onto the target icon
-   - The background and highlight colors in which your public profile should be displayed
+## Related views
+
+- [Friends](/views/friends): the people your profile says you know.
+- [Address Book](/views/addressbook): private contacts.

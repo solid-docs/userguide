@@ -1,93 +1,52 @@
 ---
 sidebar_position: 8
 title: Scheduled Event
-description: User Guide for the Scheduled Event view
+description: A poll to find a date that suits everyone
 ---
 
-# Scheduled Event View
+# Scheduled Event
 
-The Scheduled Event view enables you to create availability polls for coordinating meeting times with participants. It's similar to tools like Doodle but stores data in your Solid Pod.
+A scheduled event is a poll for choosing a date. You propose some times, invite people, and each person answers Yes, Maybe or No for each time.
 
-## Features
+![A poll with two proposed times](/img/ug-views/scheduledevent-poll.png)
 
-- Create scheduling polls with multiple time options
-- Collect availability responses from participants
-- View results in an interactive matrix
-- Send email invitations to participants
-- Full control over your scheduling data
+## Create a poll
 
-## Creating a Poll
+Creating a poll needs the **Power user** user type. Open the account menu, choose **Preferences**, and select **Power user** under **Level of user**. See [User Roles](/reference/user-roles).
 
-The poll creation uses a wizard-style interface with three steps:
+1. Open the folder where it should live.
+2. Click **Add**, then **New Schedulable Event**.
+3. Type a name (without spaces) and click **Create**.
 
-1. **Basic Information** - Enter the poll title and description
-2. **Time Options** - Add the available meeting times/dates
-3. **Access Settings** - Configure who can view and respond
+The poll is a new folder holding two files, `details.ttl` and `results.ttl`. To open the poll, open the folder, click `details.ttl`, then click **event**.
 
-Use the **Continue** button to proceed through each step, or **Go Back** to make changes.
+## Fill in the poll
 
-## Responding to a Poll
+The poll opens as a form in three steps. Use **continue ->** and **\<- go back** to move between them.
 
-When you receive a scheduling poll:
+1. **Schedule an event**: summary, location, **All Day** or a duration in minutes, a comment, and the name and email of the organiser (**Add author** adds another).
 
-1. Open the poll link
-2. For each time option, select your availability:
-   - **Yes** - Available at this time
-   - **Maybe** - Might be available
-   - **No** - Not available
-3. Your response is saved automatically
+   ![Step 1, Schedule an event](/img/ug-views/scheduledevent-form.png)
 
-## Results Matrix
+2. **Time proposals**: one date and time per row. **Add option** adds a row.
 
-The results are displayed in an interactive matrix:
+   ![Step 2, Time proposals](/img/ug-views/scheduledevent-times.png)
 
-| | Monday 9am | Monday 2pm | Tuesday 10am |
-|---|:---:|:---:|:---:|
-| Alice | Yes | No | Maybe |
-| Bob | Yes | Yes | No |
-| Carol | Maybe | Yes | Yes |
+3. **Who to invite**: one email address per row. **Add invitee** adds a row.
 
-- **Columns** - Available time options with start times
-- **Rows** - Participants who have responded
-- **Cells** - Individual availability responses
+   ![Step 3, Who to invite](/img/ug-views/scheduledevent-invite.png)
 
-Your own response appears at the bottom for easy editing.
+On the last step:
 
-## Inviting Participants
+- The **envelope** button opens your email program with a message to the invitees. Its subject is the summary followed by "When can we meet?", and its body has a link to the poll.
+- **Go to poll** shows the poll itself.
 
-After creating a poll:
+## Answer the poll
 
-1. Click the invite/share option
-2. An email template is generated with:
-   - Pre-filled subject line
-   - Link to the poll
-   - Space for recipient addresses
-3. Send the invitation to participants
+The poll shows the summary, the location, the organiser, and a column for each proposed time. Choose **Yes**, **Maybe** or **No** in your row under each time. Your answer is saved when you choose it.
 
-## Access Control
+Below the poll, the **wrench** goes back to the form so you can change the poll. Beside it are a refresh button and **Make new scheduler**.
 
-Polls support granular access control:
-
-- **Owner** - Full read/write/control permissions
-- **Public read-only** - Anyone can view results but not respond
-- **Public read-write** - Anyone can view and respond
-
-Configure access during poll creation or via the [Sharing](/views/sharing) view.
-
-## Data Storage
-
-Scheduled Event polls are stored as RDF resources:
-
-- `details.ttl` - Poll configuration and metadata
-- `results.ttl` - Participant responses
-- `index.html` - Web interface
-
-All data is stored in your Solid Pod in standard formats.
-
-## User Role
-
-The Scheduled Event view is available to users with the **Power User** role. See [User Roles](/reference/user-roles) for more information.
-
-## Related Views
-
-- [Meeting](/views/meeting) - For managing meeting details and agendas
+:::caution
+Check the times after you continue. On the test pod used for this guide, the first time proposal was not saved and only the other two appeared in the poll.
+:::

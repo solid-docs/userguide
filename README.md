@@ -27,7 +27,7 @@ This starts a local development server at http://localhost:3000/userguide/
 npm run build
 ```
 
-Generates static content into the `build` directory.
+Generates static content into the `build` directory. The build fails on a broken internal link (`onBrokenLinks: 'throw'`), so fix any link it reports before you open a pull request.
 
 ## Contributing
 

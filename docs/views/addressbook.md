@@ -1,124 +1,81 @@
 ---
 sidebar_position: 2
 title: Address Book
-description: User Guide for the Address Book view
+description: Keep contacts and groups in an address book in your pod
 ---
 
 # Address Book
 
-The Address Book view allows you to maintain your contacts, including grouping them together.
+An address book keeps your contacts and sorts them into groups. It is stored in your pod and is private unless you share it.
 
-## View
+![An address book with a contact open](/img/ug-views/addressbook-contact.png)
 
-To display an address book:
+## Create an address book
 
-1. In the SolidOS Databrowser, navigate to the address book.
-2. The address book should automatically be displayed:
+1. Open the folder where it should live.
+2. Click **Add**, then **New Address Book**.
+3. Type a name (without spaces) and click **Create**.
 
-![Address Book](/img/views/addressbook/Addressbook_View.png)
+The address book appears in the folder as a new folder. Click it to open the address book.
 
-:::tip
-If the address book is not automatically displayed, click ![Address Book](https://solidos.github.io/solid-ui/src/icons/noun_99101.svg) in the address book header.
-:::
+## The layout
 
-## Contacts
-
-### Display a Contact
-
-To display the details for a contact:
-
-1. Optionally, select the [group](#groups)(s) of which the contact is a member to filter the list of contacts.
-2. Click the name of the contact to display.
-3. The details of the contact are displayed in a [Profile](/views/profile) view:
-
-![Address Book Contact](/img/views/addressbook/Addressbook_Contact.png)
-
-4. Via the [Profile](/views/profile) view, you can edit the contact details.
-
-:::tip
-To select all groups, click the **All** button. To select a subset of the groups, click the group name while holding the Shift/Command key.
-:::
-
-### Search
-
-You can search for contacts within the address book:
-
-1. Enter the search term in the search bar at the top of the Address Book view.
-2. The names of any contacts, in the selected groups, that match the search term are listed.
-
-### Add a New Contact
-
-To create a new contact record:
-
-1. Select the group(s) into which the new contact should be appended.
-2. Click the **New Contact** button.
-3. Enter the name for the new Contact.
-4. Click ![Continue](https://solidos.github.io/solid-ui/src/icons/noun_1180158.svg) Continue icon to create the Contact.
-5. A [Profile](/views/profile) view for the new Contact is displayed allowing the details to be entered.
-
-:::note
-A contact must be a member of at least one group.
-:::
-
-### Delete an Existing Contact
-
-To delete an existing contact:
-
-1. Display the details for the contact.
-2. At the bottom of the [Profile](/views/profile), hover the mouse pointer over the profile.
-3. A ![Remove](https://solidos.github.io/solid-ui/src/icons/noun_2188_red.svg) Remove icon is displayed.
-4. Click the Remove icon to delete the contact.
+- **Left**: the groups. **All Contacts** lists everyone. A number beside each group shows how many contacts it has. Type in **Filter groups** to shorten the list.
+- **Middle**: the contacts in the selected group.
+- **Right**: the details of the selected contact.
+- **Top**: **Search**, **New Contact**, and a three-dot menu with **Sharing**, **Tools** and, when a group is selected, **Delete Group**.
 
 ## Groups
 
-Contacts can be assembled into groups. A single contact may be a member of multiple groups.
+To create a group, click **New Group** at the bottom left, type a name and click **Create Group**.
 
-### New Group
+![The Neighbours group selected](/img/ug-views/addressbook-group.png)
 
-New contact groups can be created:
+To delete a group, select it, open the three-dot menu at the top right and choose **Delete Group**. Confirm with **OK**.
 
-1. Click the **New Group** button.
-2. Enter the name for the new group.
-3. Click ![Continue](https://solidos.github.io/solid-ui/src/icons/noun_1180158.svg) Continue icon to create the group.
+## Contacts
 
-### Delete Group
+### Add a contact
 
-To delete an existing group:
+1. Select the group the contact should go in. The new contact is added to the selected group.
+2. Click **New Contact**.
+3. Under **Contact type** choose **Person** or **Organization**. The default is Organization.
+4. Type the name and click **Add Contact**.
 
-1. Hover the mouse cursor over the Group name.
-2. A ![Remove](https://solidos.github.io/solid-ui/src/icons/noun_2188_red.svg) Remove icon is displayed.
-3. Click the Remove icon to delete the group.
+![The Add Contact dialog with the contact type list open](/img/ug-views/addressbook-add-contact.png)
 
-### Group Sharing
+### Edit a contact
 
-Individual groups can be shared differently than the whole address book.
+Click a contact to show its details on the right. Type in any field: the change is saved when you leave the field.
 
-To adjust the sharing:
+- A person has fields for name, nickname, pronouns, role, organisation, addresses, emails, phones, birth date and notes. An organisation has a type, name, homepage, addresses, emails, phones and notes.
+- **Add another address**, **Add email** and **Add another phone** add a new row. Each row has a **Type** list (for example Home or Work).
+- **Part of groups** shows the groups the contact is in.
 
-1. Select the group to adjust.
-2. Click the displayed ![Sharing](https://solidos.github.io/solid-ui/src/icons/noun_123691.svg) Sharing icon.
-3. The Sharing settings for the group are displayed:
+### Open or delete a contact
 
-![Address Book Group Sharing](/img/views/addressbook/Addressbook_Group_Sharing.png)
+Click the three dots on a contact's row:
 
-4. To set custom sharing for this group:
-   1. Click the **Set specific sharing for the group** button.
-   2. This causes the sharing groups (Owners, Editors, Posters, Submitters, Viewers) for the group to be displayed.
-   3. Permissions for users can be added, adjusted, and/or removed.
-5. To reset sharing for this group back to the default:
-   1. Click the **Stop specific sharing for this group** button.
+- **Open in new window** opens the contact on its own.
+- **Delete contact** asks "Really delete this contact?". Click **OK** to delete it.
 
-For detailed instructions on managing sharing permissions, see the [Sharing](/views/sharing) view documentation.
+### Search
+
+Click **Search**, then type part of a name, email, WebID or profile address. The list shows the contacts that match.
 
 ## Tools
 
-The various Address Book tools allow you to review and maintain the address book:
+Open the three-dot menu at the top right and choose **Tools**. Each button writes its result in a box below the buttons.
 
-- **Sharing for the Address Book** - Allows the [sharing](/views/sharing) for the address book to be viewed and modified.
-- **Check Individual Card Access for Selected Groups** - Who can access which groups?
-- **Find Duplicate Cards** - Scans the contacts to determine any duplicate records. If any are found, they can be repaired.
-- **Find Individuals with no Group** - Determines if any contacts are not in any group.
-- **Public Link to this Address Book** - Generates a public link to the address book that is displayed in the **Public things** panel under **Your stuff** on your Dashboard.
-- **Personal Note of this Address Book** - Generates a private link to the address book that is displayed in the **Private things** panel under **Your stuff** on your Dashboard.
-- **Load Main Index** - Reloads the main people index.
-- **Statistics** - Generates statistics for the address book.
+![The Tools dialog after Find contacts with no group](/img/ug-views/addressbook-tools.png)
+
+- **Load main index**: reloads the list of all contacts.
+- **Statistics**: counts the contacts and groups.
+- **Check individual contact access of selected groups**: checks each contact's access settings.
+- **Find duplicate contacts**: looks for contacts with the same name and rewrites the groups without the duplicates.
+- **Find contacts with no group**: lists contacts that are in no group.
+- **Put all individuals with no group in a new group**.
+
+## Sharing
+
+Choose **Sharing** from the three-dot menu at the top right to see who can use the address book. See [Sharing](/views/sharing).

@@ -1,68 +1,60 @@
 ---
 sidebar_position: 3
 title: Navigation
-description: How to navigate through your Pod data
+description: Finding your way around SolidOS - header, menus, folders and views
 ---
 
 # Navigation
 
-You can use SolidOS to browse and maintain the data within the Pod.
+This page explains the parts of the SolidOS screen and how to move between things. Folders are shown in the file explorer, which has [its own page](../views/file-explorer.md).
 
-## Navigating Your Pod
+## The header
 
-SolidOS allows you to navigate through the data to which you have read access.
+The dark bar at the top of every page holds:
 
-1. If necessary, click the Solid logo to display the ![Home](https://solidos.github.io/solid-ui/src/icons/noun_547570.svg) Home view.
-2. Display the ![Folder](https://solidos.github.io/solid-ui/src/icons/noun_973694_expanded.svg) Folder view.
-3. The folder and data resources in the root folder are displayed as a tree.
-4. Navigate through the tree by ![Expand](https://solidos.github.io/solid-ui/src/originalIcons/tbl-expand-trans.png) expanding and ![Collapse](https://solidos.github.io/solid-ui/src/originalIcons/tbl-collapse.png) collapsing folders and data resources.
+- **The Solid logo** (top left). It takes you to the start page of the site you are on. On [mashlib.com](https://mashlib.com/) that is the page with the address field and examples.
+- **The address field** (on mashlib.com). Paste the address of a pod, folder, profile or document and select **Go** to open it.
+- **Log In** and **Sign Up**, or, once you are logged in, your picture. Your picture opens the [account menu](login-logout.md#the-account-menu) with Profile, Friends, Storage, Dashboard, Preferences and Sign out.
+- **The help button** (question mark, on pages a pod serves). It opens a menu with **User guide** and **Report a problem**.
 
-:::tip
-You can enter the URL for a folder or data resource in the web browser address bar to navigate directly to that resource.
+![The help menu open in the header](/img/ug-basics/help-menu.png)
+
+## Opening things
+
+- **Type or paste an address.** On mashlib.com use the address field in the header. On a pod that shows SolidOS, you can also type a folder or profile address straight into your browser's address bar.
+- **Click an item in a folder.** Clicking a folder opens it; clicking anything else opens it in its usual view (a picture for an image, a chat for a chat, a contact list for an address book).
+- **Use the breadcrumb.** Above every folder the path is shown, for example `me / public / ug-basics`. Click any part to go back up to that folder.
+- **Use the back arrow.** When you have opened an item from a folder, a back arrow at the left of the item's header returns you to the folder.
+
+![An item opened from a folder, with the back arrow, name, date, Public badge and More options button](/img/ug-basics/item-header.png)
+
+While you click through folders and items, the address in the address field (and in your browser) stays at the place you first opened. To get the address of the item you are looking at, open its **More options** menu (the three dots) and choose **Open in New Tab**; the new tab shows the item's own address.
+
+:::note
+Some servers show SolidOS only for folders and data documents. If you open a plain file such as a `.txt` file directly in your browser's address bar, you may see only its contents. Open it from its folder, or through the address field on mashlib.com, to see it in SolidOS.
 :::
 
-## Viewing Your Data
+## Choosing a view
 
-You can view the contents of any folders and/or data resources to which you have access.
+Each item opens in the view that fits it best. To see it another way, open its **More options** menu. The top of the menu lists the views that can show this item, for example:
 
-To view an existing folder or data resource:
+- **Contents** for a folder (the number in brackets is how many items it holds)
+- **Image** for a picture
+- **View** for a web page or text file
+- **Address book** for an address book
+- **Source** to see and edit the item's raw text
+- **Under The Hood** for technical details and deleting
 
-1. Navigate to the folder containing the resource.
-2. Open the resource by clicking the ![Expand](https://solidos.github.io/solid-ui/src/originalIcons/tbl-expand-trans.png) icon next to the resource.
-3. Depending upon the type of resource selected and your preferred [role(s)](/reference/user-roles), different view options can be displayed.
+Which views are offered also depends on your [user roles](../reference/user-roles.md).
 
-### Primary Views
+## Profile, Friends and Storage bar
 
-If the selected resource is of a well-known type, it will automatically be opened in that view. If not, click the appropriate icon:
+On some pages a pod serves, a bar with **Profile**, **Friends** and **Storage** appears below the header. It switches between the pod owner's profile, their friends list, and the pod's top folder.
 
-- ![Address Book](https://solidos.github.io/solid-ui/src/icons/noun_99101.svg) [Address Book](/views/addressbook) - List of personal contacts
-- ![Chat](https://solidos.github.io/solid-ui/src/icons/noun_346319.svg) [Chat](/views/chat) - A short chat session
-- ![Dokieli](https://solidos.github.io/solid-ui/src/icons/dokieli-logo.png) [Dokieli](https://dokie.li/) - Clientside editor for decentralised article publishing
-- ![Friends](https://solidos.github.io/solid-ui/src/originalIcons/foaf/foafTiny.gif) [Friends](/views/friends) - Maintain a list of your friends
-- ![Issue Tracker](https://solidos.github.io/solid-ui/src/icons/noun_97839.svg) [Issue Tracker](https://github.com/solidos/issue-pane/blob/main/README.md) - A flexible issue tracking system
-- ![Long Chat](https://solidos.github.io/solid-ui/src/icons/noun_1689339.svg) [Long Chat](/views/longchat) - A multi-day chat session
-- ![Meeting](https://solidos.github.io/solid-ui/src/icons/noun_66617.svg) [Meeting](/views/meeting) - Meeting details
-- ![Note Pad](https://solidos.github.io/solid-ui/src/icons/noun_79217.svg) [Note Pad](/views/notepad) - A multi-user notepad
-- ![Scheduled Event](https://solidos.github.io/solid-ui/src/icons/noun_346777.svg) [Scheduled Event](/views/scheduledevent) - Schedule events
-- ![Slideshow](https://solidos.github.io/solid-ui/src/icons/noun_138712.svg) Slideshow - Display a slideshow of images
+![The Profile, Friends and Storage bar with Storage selected](/img/ug-basics/profile-friends-storage-bar.png)
 
-### Alternate Views
+When you are logged in, the same three places for your own pod are in your account menu.
 
-- ![About](https://solidos.github.io/solid-ui/src/originalIcons/about.png) About - Display information regarding the resource
-- ![Folder](https://solidos.github.io/solid-ui/src/icons/noun_973694_expanded.svg) Folder - Display resources in a tree-view
-- ![Source](https://solidos.github.io/solid-ui/src/icons/noun_109873.svg) [Source](/views/source) - Display the source of a text file
-- ![Sharing](https://solidos.github.io/solid-ui/src/icons/padlock-timbl.svg) [Sharing](/views/sharing) - Display/update sharing permissions
-- ![Under the Hood](https://solidos.github.io/solid-ui/src/originalIcons/tango/22-emblem-system.png) [Under the Hood](/views/underthehood) - Access advanced functionality
+## Small screens
 
-### Developer Views
-
-- ![Data](https://solidos.github.io/solid-ui/src/originalIcons/rdf_flyer.24.gif) Data - Display the resource using a Data view
-- ![N3](https://solidos.github.io/solid-ui/src/originalIcons/w3c/n3_smaller.png) Data as N3 - Display in Notation3 (N3) language
-- ![RDF/XML](https://solidos.github.io/solid-ui/src/originalIcons/22-text-xml4.png) RDF/XML - Display as RDF/XML
-
-4. Click the appropriate icon to view the resource in the desired manner.
-
-:::tip
-- Each of the icons are toggle buttons. Click the icon again to close the view.
-- To view a single resource in a new browser tab, click-and-drag a displayed resource name to the browser tab bar.
-:::
+On a narrow window or a phone, SolidOS uses a mobile layout: the header wraps onto two rows and folders show fewer items per row.

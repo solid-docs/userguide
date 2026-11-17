@@ -1,109 +1,71 @@
 ---
 sidebar_position: 2
 title: Log In / Log Out
-description: How to authenticate with your Solid Pod
+description: How to log in to SolidOS with your WebID and log out again
 ---
 
 # Log In / Log Out
 
-Authentication in Solid uses your WebID to prove your identity. Once logged in, you can access your private data and any resources others have shared with you.
+Logging in tells SolidOS who you are. After that it can show your private data and anything other people have shared with you, and lets you change things you are allowed to change.
 
-## Log In
+## Log in
 
-To access your data and shared resources:
+1. Select **Log In** in the top right corner.
+2. The **Select an identity provider** dialog opens. The **Solid Identity Provider** field is filled in for you: with the provider you used last time, or otherwise with the site you are on.
 
-1. Click the **Log in** button in the top-right corner
-2. The **Select your Identity Provider** dialog appears:
+   ![The Select an identity provider dialog](/img/ug-basics/login-dialog.png)
 
-   ![Select your Identity Provider dialog](/img/Select_Your_Identity_Provider.png)
+3. If that is not your provider, open the field and choose one from the list, or type your provider's address (for example `https://solidcommunity.net`).
 
-3. Choose your identity provider:
-   - **Enter your WebID** in the textbox and click **Go**, or
-   - **Select a provider** from the list (e.g., solidcommunity.net, inrupt.net)
+   ![The list of suggested identity providers](/img/ug-basics/login-provider-list.png)
 
-4. You're redirected to your provider's login page:
+4. Select **Login**. Your browser goes to your provider's sign-in page.
+5. Sign in there. Each provider has its own page; some offer passkeys or other ways to sign in besides a username and password. This is one example:
 
-   ![Node Solid Server Login dialog](/img/Login_Dialog.png)
+   ![An identity provider's sign-in page](/img/ug-basics/provider-sign-in-page.png)
 
-   :::note
-   The login form varies depending on your Solid server. Some support additional authentication methods like passkeys or social login.
-   :::
+6. Your browser comes back to the page you started from. In place of **Log In** and **Sign Up**, the header now shows your picture (or a placeholder) with a small arrow.
 
-5. Enter your credentials and authorize SolidOS to access your Pod
-6. After successful login, your profile image appears in the top-right corner
+To leave the dialog without logging in, select **Cancel** or the close button.
 
-## What Changes After Login
+## What changes after you log in
 
-Once logged in, you can:
+| | Logged out | Logged in |
+|---|---|---|
+| See public data | Yes | Yes |
+| See your private data and data shared with you | No | Yes |
+| **Add** button in folders you can write to | No | Yes |
+| **Manage Access** in item menus | No | Yes, where you have control |
+| Account menu (Profile, Friends, Storage, Dashboard, Preferences, Sign out) | No | Yes |
 
-| Capability | Before Login | After Login |
-|------------|--------------|-------------|
-| View public data | Yes | Yes |
-| View your private data | No | Yes |
-| View shared data | No | Yes |
-| Edit your data | No | Yes |
-| Create new resources | No | Yes |
-| Manage permissions | No | Yes |
+You stay logged in when you reload the page or come back to it later in the same browser.
 
-## Log Out
+## The account menu
 
-To log out of your Solid account:
+Select your picture in the top right corner to open the account menu:
 
-1. Click your profile image in the top-right corner
-2. Select **Log out** from the dropdown menu
-3. You're returned to the public view
+![The account menu](/img/ug-basics/account-menu.png)
 
-:::tip
-Log out when using shared or public computers to protect your data.
-:::
+- **Profile**: your profile. You can edit it from there.
+- **Friends**: the people listed as friends in your profile.
+- **Storage**: the top folder of your pod.
+- **Dashboard**: a page for creating new things.
+- **Preferences**: your [preferences](../reference/preferences.md), including your [user roles](../reference/user-roles.md).
+- **Sign out**: log out.
 
-## Session Management
+## Log out
 
-### Session Duration
-Your login session persists until you:
-- Explicitly log out
-- Clear your browser cookies
-- The session expires (varies by provider)
+1. Select your picture in the top right corner.
+2. Select **Sign out**.
 
-### Multiple Tabs
-SolidOS shares your login across browser tabs. Logging out in one tab logs you out everywhere.
+You stay on the same page, now as a logged-out visitor: **Log In** and **Sign Up** are back, the **Add** button is gone, and only public data is shown.
 
-### Trusted Apps
-When you first log in to a SolidOS instance, you may be asked to authorize it as a trusted app. This grants the app permission to access your Pod on your behalf.
+![The same folder after signing out](/img/ug-basics/signed-out-folder.png)
 
-To manage trusted apps:
-1. Log in to your Pod
-2. Navigate to your profile
-3. Open [Preferences](/reference/preferences)
-4. Review and modify trusted applications
+Log out when you have used a shared computer.
 
-## Troubleshooting
+## If logging in does not work
 
-### Can't Log In
-
-| Problem | Solution |
-|---------|----------|
-| "Identity provider not responding" | Check your internet connection; try again later |
-| "Invalid credentials" | Verify username/password; use password reset if needed |
-| "Origin not trusted" | Add the SolidOS origin as a trusted app in your Pod settings |
-| Redirect loop | Clear browser cookies and try again |
-
-### Access Denied After Login
-
-If you can log in but can't access expected resources:
-- Verify you're using the correct WebID
-- Check that the resource owner has granted you permission
-- Ensure the Pod server is online
-
-### Forgotten WebID
-
-Your WebID is typically in the format:
-```
-https://[username].[provider]/profile/card#me
-```
-
-For example:
-- `https://alice.solidcommunity.net/profile/card#me`
-- `https://alice.inrupt.net/profile/card#me`
-
-Contact your Pod provider if you've forgotten your credentials.
+- Check that you chose the provider that issued your WebID. Your WebID usually starts with your provider's address, for example `https://alice.solidcommunity.net/profile/card#me` belongs to `https://solidcommunity.net`.
+- If you have forgotten your password, ask your provider; SolidOS never sees it.
+- If you are logged in but cannot open something, the owner may not have given you access to it.

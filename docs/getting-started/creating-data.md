@@ -1,42 +1,86 @@
 ---
 sidebar_position: 4
 title: Creating Data
-description: How to create new resources in your Pod
+description: How to create folders, files and app data in your pod, upload files, and delete things
 ---
 
 # Creating and Deleting Data
 
-## Creating New Data
+You can add things to any folder you are allowed to write to, and delete things you are allowed to delete. You need to be [logged in](login-logout.md).
 
-You can create new folders and data within any Pod folder to which you have create access.
+## Add something to a folder
 
-To create a new folder or data resource:
+1. Open the folder in the [file explorer](../views/file-explorer.md). If you can write to it, an **Add** button is shown at the right of the bar above the items.
+2. Select **Add**. A menu lists what you can create:
 
-1. [Navigate](/getting-started/navigation) to the folder in which you want to create the new resource.
-2. Click the ![Create](https://solidos.github.io/solid-ui/src/icons/noun_34653_green.svg) icon for the folder.
-3. Several icons are displayed showing the types of resource that can be created:
+   ![The Add menu](/img/ug-basics/add-menu.png)
 
-   - ![Address Book](https://solidos.github.io/solid-ui/src/icons/noun_99101.svg) [Address Book](/views/addressbook) - List of contacts
-   - ![Chat](https://solidos.github.io/solid-ui/src/icons/noun_346319.svg) [Chat](/views/chat) - A short chat session
-   - ![Dokieli](https://solidos.github.io/solid-ui/src/icons/dokieli-logo.png) [Dokieli](https://dokie.li/) - Clientside editor for decentralised article publishing
-   - ![Folder](https://solidos.github.io/solid-ui/src/icons/noun_973694_expanded.svg) Folder - A named folder
-   - ![Long Chat](https://solidos.github.io/solid-ui/src/icons/noun_1689339.svg) [Long Chat](/views/longchat) - A multi-day chat session
-   - ![Meeting](https://solidos.github.io/solid-ui/src/icons/noun_66617.svg) [Meeting](/views/meeting) - Meeting details
-   - ![Note Pad](https://solidos.github.io/solid-ui/src/icons/noun_79217.svg) [Note Pad](/views/notepad) - A multi-user notepad
-   - ![Scheduled Event](https://solidos.github.io/solid-ui/src/icons/noun_346777.svg) [Scheduled Event](/views/scheduledevent) - Schedule events
-   - ![Source](https://solidos.github.io/solid-ui/src/icons/noun_109873.svg) [Source](/views/source) - Create text files (e.g., Turtle, JSON, RDF, ShEx and SHACL shapes, etc.)
+   - **New Tracker**: an issue tracker
+   - **New Address Book**: an [address book](../views/addressbook.md) for contacts and groups
+   - **New Long Chat**: a [chat](../views/longchat.md)
+   - **New Dokieli Document**: a document you can write and publish with [dokieli](https://dokie.li/)
+   - **New Folder**: an empty folder
+   - **New File**: an empty file
+   - **Upload**: a file from your computer
 
-4. Select the type of resource you want to create.
-5. Enter the name of the new resource, and click the ![Continue](https://solidos.github.io/solid-ui/src/icons/noun_1180158.svg) Continue button.
-6. The selected resource will be created in the folder.
+   With the Power user [role](../reference/user-roles.md) turned on, the menu also offers **New Notepad**, **New Meeting** and **New Schedulable Event**:
 
-:::tip
-- The filename extension of Dokieli documents must be `.html`.
-- Drag and drop a file onto the ![Create](https://solidos.github.io/solid-ui/src/icons/noun_34653_green.svg) button, and it will be uploaded to that folder.
+   ![The Add menu for a power user](/img/ug-basics/add-menu-power-user.png)
+
+3. For anything except **Upload**, a dialog asks for a name. Type it and select **Create**.
+
+   ![The New Folder dialog](/img/ug-basics/new-folder-dialog.png)
+
+:::warning Use names without spaces
+Use letters, numbers and hyphens, for example `holiday-photos`. SolidOS shows hyphens as spaces, so this folder is listed as "holiday photos". A name typed with a space can produce an address that some servers list incorrectly, after which the folder that holds it may fail to load.
 :::
 
-## Deleting Existing Data
+### What happens next
 
-You can delete existing folder and data resources on which you have delete permission via the ![Under the Hood](https://solidos.github.io/solid-ui/src/originalIcons/tango/22-emblem-system.png) [Under the Hood](/views/underthehood) view.
+- **New Folder**: the folder appears in the current folder.
+- **New File**: the file opens in an editor, ready for you to type. Give the name an ending that says what it is, such as `.txt` or `.md`.
+- **New Address Book**, **New Long Chat**, **New Tracker**: each is created as a folder holding its data. It is listed in the current folder; click it to open the address book, chat or tracker.
+- A new address book is private, even when you create it in a public folder:
 
-See the [Under the Hood](/views/underthehood) documentation for detailed instructions on deleting resources.
+  ![A new, empty address book marked Private](/img/ug-basics/new-address-book.png)
+
+- A new tracker opens with a message saying its settings need an update. See the [issue tracker's documentation](https://github.com/solidos/issue-pane/blob/main/README.md).
+
+## Upload files
+
+- Select **Add**, then **Upload**, and choose one or more files on your computer, or
+- drag files from your computer onto the items area of the folder.
+
+The files are stored in the folder you are looking at. Folders cannot be dropped; upload the files inside them instead.
+
+## Edit a text file
+
+1. Open the file's **More options** menu (three dots) and choose **Source**.
+2. Select the **Edit** button (pencil) in the item header.
+3. Make your changes. An **Unsaved** label appears in the header.
+4. Select **Save Changes**, or **Cancel** to throw your changes away.
+
+![Editing a text file, with Cancel and Save Changes](/img/ug-basics/editing-a-text-file.png)
+
+See [Source](../views/source.md) for more about the editor.
+
+## Delete something
+
+Deleting is done from **Under The Hood**.
+
+1. Open the item's **More options** menu (three dots) and choose **Under The Hood**.
+2. Select the red delete button (a white bar on a red circle) at the top right.
+
+   ![Under The Hood for an image, with the red delete button at the top right](/img/ug-basics/under-the-hood.png)
+
+3. A dialog asks **Are you sure you want to delete ...? This can't be undone.** Select **Delete**, or **Cancel** to keep it.
+
+   ![The Delete resource dialog](/img/ug-basics/delete-confirm.png)
+
+4. A message confirms that the item was deleted. Select **OK**.
+
+   ![The Resource deleted message](/img/ug-basics/resource-deleted.png)
+
+Deleting a folder deletes everything in it as well.
+
+See [Under the Hood](../views/underthehood.md) for the rest of that view.

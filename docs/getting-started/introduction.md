@@ -1,77 +1,73 @@
 ---
 sidebar_position: 1
 title: Introduction
-description: Introduction to SolidOS and the Databrowser
+description: What SolidOS is and how to open it
 ---
 
 # Introduction to SolidOS
 
-[Solid](https://solidproject.org/) empowers users and organizations to separate their data from the applications that use it. It allows people to look at the same data with different apps at the same time. It opens brand new avenues for creativity, problem-solving, and commerce.
+[Solid](https://solidproject.org/) keeps your data in a **pod**, a personal data store on the web that you control, separate from the apps that use it. **SolidOS** is a data browser for pods. It shows what is in a pod (profiles, folders, files, address books, chats and more) and lets you create, edit and delete it.
 
-[SolidOS Databrowser Frontend](https://github.com/solidos), which we name SolidOS for simplicity, is your default interface to Solid. It provides all the functionality needed to manage data on Solid—from basic contact management and collaboration to complex research workflows.
+This guide describes SolidOS 3.1.
 
-## What Can You Do with SolidOS?
+## Key ideas
 
-SolidOS enables you to:
+**Pod.** Your data store on the web. A pod is a set of folders and files, each with its own web address.
 
-| Feature | Description |
-|---------|-------------|
-| **Manage Contacts** | Create and organize [address books](/views/addressbook) with contacts and groups |
-| **Collaborate** | Share [meetings](/views/meeting), [chats](/views/longchat), and [notepads](/views/notepad) with others |
-| **Control Access** | Set fine-grained [permissions](/views/sharing) on who can see and edit your data |
-| **View Your Profile** | Customize your [public profile](/views/profile) visible to others |
-| **Organize Files** | Navigate and manage folders and resources in your Pod |
-| **Schedule Events** | Coordinate availability with [scheduling polls](/views/scheduledevent) |
+**WebID.** The web address that identifies you, for example `https://alice.solidcommunity.net/profile/card#me`. You log in with the identity provider that issued it.
 
-## Key Concepts
+**Views.** SolidOS shows each thing in a view that fits it: a profile as a profile page, a folder as a file explorer, an image as a picture, an address book as a contact list. Some things can be shown in more than one view; you pick another one from the item's menu (see [The file explorer](../views/file-explorer.md)).
 
-### Pods
-A **Pod** (Personal Online Datastore) is your personal data storage on the web. You control who can access your Pod and what they can do with your data.
+## Two ways to open SolidOS
 
-### WebID
-Your **WebID** is your identity on the decentralized web—a URL that uniquely identifies you (e.g., `https://alice.solidcommunity.net/profile/card#me`).
+### From a pod
 
-### Views
-SolidOS displays data through different **views** (also called panes). Each view presents data in a format suited to its type—contacts in an address book view, messages in a chat view, etc.
+Many Solid servers show SolidOS when you open a pod address in your web browser. Which version you get depends on the server.
 
-## Accessing Data
+### From mashlib.com
 
-To access data stored in a Solid Pod:
+[mashlib.com](https://mashlib.com/) runs SolidOS 3.1 and can show any pod. Paste the address of a pod, folder, profile or document into the address field at the top and select **Go**, or pick one of the examples below it.
 
-1. In a web browser, navigate to the Pod URL (e.g., [`https://suser.solidcommunity.net`](https://suser.solidcommunity.net))
-2. You'll see the public data within the Pod:
+![The mashlib.com start page with an address field and example links](/img/ug-basics/mashlib-start-page.png)
 
-![Home View (Public)](/img/Public_Home.png)
+The address of what you are looking at stays in that field, so you can copy it, or change it and select **Go** again.
 
-Click the view icons below the header to see different presentations. For example, the Folder view:
+## What you see without logging in
 
-![Folder View (Public)](/img/Public_Folder.png)
+Anyone can look at the public parts of a pod. This is the public profile of a test account:
 
-:::tip
-Click the Solid logo in the top-left corner to return to the default Home view.
-:::
+![A public profile shown in SolidOS, logged out](/img/ug-basics/profile-logged-out.png)
 
-## Public vs. Private Data
+And this is the top folder of the same pod. The owner's name and picture are shown above the folder.
 
-- **Public data** is visible to anyone who visits your Pod URL
-- **Private data** requires [logging in](/getting-started/login-logout) and having appropriate permissions
-- You control what's public and private via the [Sharing](/views/sharing) view
+![The top folder of a pod, with the folder tree on the left](/img/ug-basics/pod-home-folder-tree.png)
 
-## Getting a Pod
+You can open both yourself:
 
-To use SolidOS fully, you need a Solid Pod. You can get one from:
+- [The test profile on mashlib.com](https://mashlib.com/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2Fprofile%2Fcard%23me)
+- [The test pod's top folder on mashlib.com](https://mashlib.com/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2F)
 
-- [solidcommunity.net](https://solidcommunity.net) - Community-run Pod provider
-- [inrupt.net](https://inrupt.net) - Hosted by Inrupt
-- Self-hosted using [Community Solid Server](https://github.com/CommunitySolidServer/CommunitySolidServer)
+## Public and private data
 
-## Next Steps
+- **Public** things can be read by anyone. In the file explorer they carry a globe icon.
+- **Private** things can only be read by people who have been given access. When you are logged in and allowed to see them, they carry a padlock icon. When you are not, you see at most their name, with no item count and no icon.
+- To see your private data, or data others have shared with you, [log in](login-logout.md).
 
-1. [Log in](/getting-started/login-logout) to access your private data
-2. [Navigate](/getting-started/navigation) your Pod's folders and files
-3. [Create data](/getting-started/creating-data) like contacts, chats, and meetings
+## Getting a pod
 
-:::note
-- When viewing another person's Pod, add their Pod origin as a trusted app in your profile
-- To use Developer or Power User features on other Pods, make your preferences file (`/settings/prefs.ttl`) world-readable
-:::
+Select **Sign Up** in the top right corner. It opens [solidproject.org/get_a_pod](https://solidproject.org/get_a_pod), which lists places that offer pods.
+
+The login dialog also suggests these identity providers, each of which offers accounts:
+
+- Solid Community: [solidcommunity.net](https://solidcommunity.net)
+- Solid Web: [solidweb.org](https://solidweb.org)
+- Solid Web ME: [solidweb.me](https://solidweb.me)
+- Inrupt.com: [login.inrupt.com](https://login.inrupt.com)
+
+You can also run your own server, for example [Community Solid Server](https://github.com/CommunitySolidServer/CommunitySolidServer) or [JavaScript Solid Server](https://github.com/JavaScriptSolidServer/JavaScriptSolidServer).
+
+## Next steps
+
+1. [Log in](login-logout.md) to see your private data.
+2. [Find your way around](navigation.md) the header, menus and folders.
+3. [Create data](creating-data.md): folders, files, uploads, address books and chats.

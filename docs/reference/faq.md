@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 title: FAQ
-description: Frequently Asked Questions about SolidOS
+description: Frequently asked questions about SolidOS
 ---
 
 # Frequently Asked Questions
@@ -10,73 +10,80 @@ description: Frequently Asked Questions about SolidOS
 
 ### What is SolidOS?
 
-SolidOS (also known as the SolidOS Databrowser Frontend) is the default interface to Solid. It enables you to create, share, and collaborate on data stored within Solid Pods with your friends and contacts through social networks and applications.
+A data browser for Solid pods. It shows what is in a pod (profiles, folders, files, address books, chats and more) and lets you create, edit and delete it. See the [Introduction](../getting-started/introduction.md).
 
-### What is a Solid Pod?
+### What is a Solid pod?
 
-A Solid Pod is your personal data store in the Solid ecosystem. It's where your data lives, and you control who has access to it.
+Your personal data store on the web. Your data lives there, and you decide who can read or change it.
 
 ### What is a WebID?
 
-A WebID is your unique identifier in the Solid ecosystem. It's a URL that points to your profile document and is used to authenticate you across different Solid applications.
+The web address that identifies you, for example `https://alice.solidcommunity.net/profile/card#me`. It points to your profile, and you log in with the identity provider that issued it.
 
-## Authentication
+### Can I use SolidOS without installing anything?
+
+Yes. Open [mashlib.com](https://mashlib.com/) and paste the address of any pod, folder or profile. Many pod servers also show SolidOS when you open a pod address in your browser.
+
+## Logging in
 
 ### Why do I need to log in?
 
-You need to log in to access your private data and data that others have shared with you. Without logging in, you can only see publicly available data.
+To see your private data and anything others have shared with you, and to create or change things. Without logging in you see only public data.
 
-### How do I choose an Identity Provider?
+### Which identity provider do I choose?
 
-When logging in, you can either enter your WebID directly or select from a list of identity providers. If you already have a Solid account, use the identity provider where your Pod is hosted.
+The one where you created your account. The login dialog suggests several; you can also type your provider's address. See [Log In / Log Out](../getting-started/login-logout.md).
 
-## Views and Features
+### Where is the log out button?
+
+Select your picture in the top right corner, then **Sign out**.
+
+## Views and menus
 
 ### Why don't I see all the views?
 
-The views available to you depend on your selected [user role](/reference/user-roles). By default, only standard social views are shown. To access Developer or Power User views, you need to enable those roles in your [Preferences](/reference/preferences#role).
+Some views are listed only for people who have turned on the Power user or Developer role. See [User Roles](user-roles.md).
 
 ### How do I change my user role?
 
-1. Click your profile image and select **Preferences**
-2. Under **User types**, select the roles you want
-3. Refresh your browser for changes to take effect
+Select your picture, then **Preferences**, and choose under **Level of user**. See [User Roles](user-roles.md#setting-your-roles).
 
-See [User Roles](/reference/user-roles) for more information.
+### Where did the folder tree go?
 
-## Sharing and Permissions
+The folder tree appears when you open the top folder of a pod. If it is hidden, select the small round arrow button at its edge to show it again. See [File Explorer](../views/file-explorer.md).
 
-### How do I share a resource?
+### Why does the address stay the same while I click around?
 
-Use the [Sharing view](/views/sharing) to control who can access your resources. You can grant access to specific users, groups, or make resources public.
+The address field shows the place you first opened. To get the address of the item you are looking at, choose **Open in New Tab** in its **More options** menu. See [Navigation](../getting-started/navigation.md).
 
-### What are the different permission levels?
+### Does SolidOS work on a phone?
 
-- **Owners** - Full control including the ability to manage permissions
-- **Editors** - Can read, create, update, and delete
-- **Posters** - Can read and create (append)
-- **Submitters** - Can create only
-- **Viewers** - Read-only access
+Yes. On a narrow screen SolidOS switches to a mobile layout.
 
-## Troubleshooting
+## Creating and deleting
 
-### Why can't I see another person's Pod?
+### Why is there no Add button?
 
-Make sure you've added the origin of that Pod as a trusted app on your own profile. Also ensure you're logged in with your WebID.
+You are not logged in, or you are not allowed to write to this folder.
 
-### Why aren't my role changes taking effect?
+### Why won't my folder open after I created something in it?
 
-You need to refresh your web browser after changing roles in Preferences.
+If you gave the new thing a name with a space in it, some servers list the folder incorrectly and it can no longer be loaded. Use hyphens instead of spaces in names. See [Creating Data](../getting-started/creating-data.md).
 
-### How do I delete a resource?
+### How do I delete something?
 
-Use the [Under the Hood](/views/underthehood) view to delete resources. You need delete permission on the resource.
+Open its **More options** menu, choose **Under The Hood**, and select the red delete button. See [Creating Data](../getting-started/creating-data.md#delete-something).
 
-## Getting Help
+## Sharing
 
-### Where can I get more help?
+### How do I share something?
 
-- [Solid Project](https://solidproject.org/) - Official Solid documentation
-- [Solid Forum](https://forum.solidproject.org/) - Community discussion forum
-- [Matrix Chat](https://matrix.to/#/#solid_solidos:gitter.im) - Real-time chat with the community
-- [SolidOS GitHub](https://github.com/SolidOS) - Report issues and contribute
+See [Sharing](../views/sharing.md).
+
+## Getting help
+
+- In SolidOS, the help button (question mark) in the header has **User guide** and **Report a problem**.
+- [Solid Project](https://solidproject.org/): Solid documentation
+- [Solid Forum](https://forum.solidproject.org/): community discussion
+- [Matrix chat](https://matrix.to/#/#solid_solidos:gitter.im): live chat with the SolidOS community
+- [SolidOS on GitHub](https://github.com/SolidOS): report problems and contribute

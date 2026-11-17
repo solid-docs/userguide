@@ -22,6 +22,8 @@ const sidebars: SidebarsConfig = {
         id: 'views/overview',
       },
       items: [
+        'views/file-explorer',
+        'views/manage-access',
         'views/addressbook',
         'views/chat',
         'views/longchat',

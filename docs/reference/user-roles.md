@@ -1,64 +1,64 @@
 ---
 sidebar_position: 1
 title: User Roles
-description: Reference for Preferences User Roles
+description: How the Power user and Developer roles change what SolidOS offers
 ---
 
 # User Roles
 
-There are many views (also known as *panes*) available through the Databrowser that provide access to a wealth of functionality. However, users can sometimes feel overwhelmed by the large number of available options when accessing resources within their Pod.
+SolidOS can show the same thing in many views. To keep menus short, some views, and some kinds of new things, are offered only to people who have turned on a role:
 
-To improve the user experience, not to mention the onboarding process for new users, the Databrowser views that are displayed for a particular resource are based on the user's selected role(s). By default, all users can view all of the standard social views. Selecting one or more optional advanced role(s) enables more advanced views:
+- **Power user**: extra views and extra things to create, such as notepads, meetings and scheduling polls.
+- **Developer**: views of the raw data behind a thing.
 
-- **Developer** — View Data, N3, and RDF views of the data.
-- **Power User** — View additional Databrowser views such as [Note Pad](/views/notepad) and [Meeting](/views/meeting).
+With no role turned on you get the standard views. Roles only add; they never take anything away.
 
 :::note
-- An exception may be made to the views displayed for a given resource if it makes sharing resources easier.
-- Your selected role(s) are stored in your settings which are private by default.
+If the best view for a thing needs a role you have not turned on, SolidOS still opens the thing in that view. The role only decides whether the view is listed in menus.
 :::
 
-## Setting Your Role
+## Setting your roles
 
-To update your role:
+1. [Log in](../getting-started/login-logout.md).
+2. Select your picture in the top right corner, then **Preferences**.
+3. Under **Level of user**, select **Power user**, **Developer**, or both (hold Ctrl, Command on a Mac, or Shift to select both).
 
-1. Click on your profile image in the top-right corner.
-2. Select **Preferences** from the dropdown menu.
-3. Select your optional role(s) from the Roles listbox.
-4. Click off the listbox.
+Your roles are stored in your pod and are private. See [Preferences](preferences.md).
 
-:::tip
-- Multiple Roles can be selected by holding down the Shift or Command key on your keyboard.
-- You need to refresh your web browser for the role changes to take effect.
-:::
+## What each role adds
 
-## Views by User Type
+### In the Add menu
 
-Below is a table that documents the existing Databrowser views and the user types that are associated with them.
+| Item | Needs |
+|------|-------|
+| New Tracker, New Address Book, New Long Chat, New Dokieli Document, New Folder, New File, Upload | No role |
+| New Notepad, New Meeting, New Schedulable Event | Power user |
 
-| View Name | Description | User Type |
-|-----------|-------------|-----------|
-| ![Address Book](https://solidos.github.io/solid-ui/src/icons/noun_99101.svg) [Address Book](/views/addressbook) | Displays a list of personal contacts | Default |
-| [Basic Preferences](/reference/preferences) | Configure your preferences | Default |
-| ![Long Chat](https://solidos.github.io/solid-ui/src/icons/noun_1689339.svg) [Chat - Long](/views/longchat) | A long chat session | Default |
-| ![Chat](https://solidos.github.io/solid-ui/src/icons/noun_346319.svg) [Chat - Short](/views/chat) | A short chat session. Used by the [Meeting](/views/meeting) view | Power User |
-| ![Data](https://solidos.github.io/solid-ui/src/originalIcons/rdf_flyer.24.gif) Data | Display the resource using a Data view | Developer |
-| ![Dokieli](https://solidos.github.io/solid-ui/src/icons/dokieli-logo.png) [Dokieli](https://dokie.li/) | Clientside editor for decentralised article publishing | Default |
-| ![Folder](https://solidos.github.io/solid-ui/src/icons/noun_973694_expanded.svg) Folder | Display the resources within the container in a tree-view | Default |
-| [Form](https://solidos.github.io/solid-ui/Documentation/forms-intro.html) | Render a Form based on a Form Language model | Power User |
-| ![Home](https://solidos.github.io/solid-ui/src/icons/noun_547570.svg) Home | Displays the user's Home view | Default |
-| ![Issue Tracker](https://solidos.github.io/solid-ui/src/icons/noun_97839.svg) Issue Tracker | A configurable issue tracker | Power User |
-| ![Meeting](https://solidos.github.io/solid-ui/src/icons/noun_66617.svg) [Meeting](/views/meeting) | A single meeting | Power User |
-| ![N3](https://solidos.github.io/solid-ui/src/originalIcons/w3c/n3_smaller.png) N3 | Display the resource in Notation3 (N3) language | Developer |
-| ![Note Pad](https://solidos.github.io/solid-ui/src/icons/noun_79217.svg) [Note Pad](/views/notepad) | A note pad | Power User |
-| Playlist | An audio playlist | Power User |
-| [Profile](/views/profile) | Your public profile | Default |
-| ![RDF/XML](https://solidos.github.io/solid-ui/src/originalIcons/22-text-xml4.png) RDF/XML | Display the resource as RDF/XML | Developer |
-| ![Schedule](https://solidos.github.io/solid-ui/src/icons/noun_346777.svg) [Schedule](/views/scheduledevent) | A scheduled event | Power User |
-| ![Sharing](https://solidos.github.io/solid-ui/src/icons/padlock-timbl.svg) [Sharing](/views/sharing) | Display/update the sharing permissions for the resource | Default |
-| ![Slideshow](https://solidos.github.io/solid-ui/src/icons/noun_138712.svg) Slideshow | Display a slideshow of the images contained within the container | Power User |
-| ![Friends](https://solidos.github.io/solid-ui/src/originalIcons/foaf/foafTiny.gif) [Social](/views/friends) | Your friends | Default |
-| ![Source](https://solidos.github.io/solid-ui/src/icons/noun_109873.svg) [Source](/views/source) | Display the source of a resource | Default |
-| [Trusted Applications](/reference/preferences#manage-your-trusted-applications) | Applications that are trusted to access your Pod | Default |
-| ![Under the Hood](https://solidos.github.io/solid-ui/src/originalIcons/tango/22-emblem-system.png) [Under the Hood](/views/underthehood) | Access 'under the hood' functionality regarding the resource. Additionally, allows you to delete a resource | Developer |
-| Video | Display videos | Default |
+![The Add menu with the Power user role turned on](/img/ug-basics/add-menu-power-user.png)
+
+### In the More options menu
+
+The top of an item's **More options** menu lists the views that can show it. These are some of the names you will see there:
+
+| View | Shows | Needs |
+|------|-------|-------|
+| Contents | A folder in the [file explorer](../views/file-explorer.md) | No role |
+| Image | A picture | No role |
+| View | A web page, Markdown or text file | No role |
+| Address book, Contact | An [address book](../views/addressbook.md) or one contact | No role |
+| Chat channnel (spelled this way in the menu) | A [chat](../views/longchat.md) | No role |
+| Tracker | An issue tracker | No role |
+| Friends | The friends listed in a profile | No role |
+| Source | The item's raw text, which you can [edit](../views/source.md) | No role |
+| Under The Hood | Technical details, and [deleting](../getting-started/creating-data.md#delete-something) | No role |
+| Notepad | A shared [notepad](../views/notepad.md) | Power user |
+| Meeting | A [meeting](../views/meeting.md) | Power user |
+| Scheduling poll | A [scheduling poll](../views/scheduledevent.md) | Power user |
+| Slideshow | The pictures in a folder, one at a time | Power user |
+| About, Data, Data as N3, As RDF/XML | The data behind the item, as tables or as text | Developer |
+
+This is the More options menu of a text file for someone with the Developer role. **About** is the Developer view:
+
+![More options menu of a text file with the Developer role](/img/ug-basics/more-options-developer.png)
+
+**Manage Access** appears in the same menu whenever you are logged in and have control of the item; it does not depend on a role.

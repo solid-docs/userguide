@@ -1,36 +1,28 @@
 ---
 sidebar_position: 3
 title: Chat
-description: User Guide for the Short Chat view
+description: The short chat view, used for the chat inside a meeting
 ---
 
-# Chat View
+# Chat
 
-The Chat view provides a simple chat discussion interface for short conversations.
+The short Chat view is a simple message list. In SolidOS 3.1 you meet it as the **Chat** tab of a [meeting](/views/meeting). For a chat room of its own, use [Long Chat](/views/longchat).
 
-:::note
-The Short Chat pane is **deprecated** in favor of [Long Chat](/views/longchat). It is only available to Power Users to discourage creating new chat resources with this format.
-:::
+![The Chat tab of a meeting with one message](/img/ug-views/chat-meeting.png)
 
-## Features
+## Where it comes from
 
-- Simple real-time messaging interface
-- Message count displayed in labels (e.g., "Chat (5)")
-- Messages stored in your Solid Pod as RDF data
-- Access control via [Sharing](/views/sharing) permissions
+The **Add** menu in a folder does not offer a short chat. To get one:
 
-## Data Storage
+1. Open a meeting. Creating one needs the **Power user** user type; see [Meeting](/views/meeting).
+2. Click the green **+** below the tabs and choose the speech-bubble icon.
+3. A **Chat** tab appears. Click it.
 
-Chat messages are stored using semantic web standards:
-- Messages saved in Turtle (RDF) format
-- Each message includes author attribution and timestamp
-- Data stored in your Pod for full ownership
+## Send a message
 
-## User Role
+Type in the box and press **Enter**, or click the arrow on the right. The message appears above the box with your name and the time.
 
-The Chat view is available to users with the **Power User** role. See [User Roles](/reference/user-roles) for more information.
+## Related views
 
-## Related Views
-
-- [Long Chat](/views/longchat) - Recommended for new conversations, supports multi-day chats with more features
-- [Meeting](/views/meeting) - Includes chat functionality within meeting context
+- [Long Chat](/views/longchat): a full chat room with threads, reactions and settings.
+- [Meeting](/views/meeting): holds the chat together with notes and other tools.

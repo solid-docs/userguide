@@ -17,7 +17,7 @@ const config: Config = {
   organizationName: 'solid-docs',
   projectName: 'userguide',
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
 
   i18n: {
     defaultLocale: 'en',
@@ -58,7 +58,7 @@ const config: Config = {
     colorMode: {
       defaultMode: 'light',
       disableSwitch: false,
-      respectPrefersColorScheme: true,
+      respectPrefersColorScheme: false,
     },
     announcementBar: {
       id: 'contribute',
@@ -107,6 +107,14 @@ const config: Config = {
             {
               type: 'html',
               value: '<hr style="margin: 0.5rem 0;">',
+            },
+            {
+              label: 'mashlib.com (SolidOS 3.1 live)',
+              href: 'https://mashlib.com/',
+            },
+            {
+              label: 'JavaScript Solid Server (JSS)',
+              href: 'https://jss.live/',
             },
             {
               label: 'Solid Project',

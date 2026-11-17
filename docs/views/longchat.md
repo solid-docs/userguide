@@ -1,81 +1,66 @@
 ---
 sidebar_position: 4
 title: Long Chat
-description: User Guide for the Long Chat view
+description: A chat room stored in your pod
 ---
 
-# Long Chat View
+# Long Chat
 
-The Long Chat view is the modern chat interface for persistent, multi-day conversations in SolidOS. It replaces the deprecated [Short Chat](/views/chat) pane.
+A long chat is a chat room stored in your pod. Messages are grouped by day, and you can reply in threads, react and edit your messages.
 
-## Features
+![A long chat with two messages](/img/ug-views/longchat.png)
 
-- Persistent chat channels organized by date
-- Real-time messaging with multiple participants
-- Message threading support
-- Customizable display preferences
-- Participant management
+## Create a chat room
 
-## Layout
+1. Open the folder where it should live.
+2. Click **Add**, then **New Long Chat**.
+3. Type a name (without spaces) and click **Create**.
 
-The Long Chat interface uses a three-column layout:
+The chat appears in the folder. Click it to open it.
 
-- **Left panel** - Participants list showing who is in the chat
-- **Center** - Main chat area with messages
-- **Right panel** - Thread view and preferences
+## Send a message
 
-## Sending Messages
+Type in the box at the bottom and press **Enter**, or click the arrow on the right. The message appears with your name and the time.
 
-1. Type your message in the input area at the bottom
-2. Press **Enter** to send (or **Shift+Enter** if configured in preferences)
-3. Messages appear in the chat with your name and timestamp
+## Act on a message
 
-## Preferences
+Click the three dots beside a message. A row of buttons opens below it:
 
-Click the settings button in the toolbar to customize your chat experience:
+- **Pencil**: edit the message. Change the text and press **Enter**. The time then shows when it was first sent and when it was edited.
+- **Thumbs up** and **thumbs down**: agree or disagree. A thumbs up shows under the message.
+- **Curved arrow**: reply in a thread.
+- **X**: close the row.
 
-| Preference | Description |
-|------------|-------------|
-| Color by user | Display each user's messages in a different color |
-| Expand images | Show image URLs as inline images |
-| Newest first | Display newest messages at the top |
-| Author on left | Show author name and date on the left side |
-| Shift+Enter sends | Use Shift+Enter instead of Enter to send |
-| Image height | Configure the height of inline images |
+![The buttons for a message](/img/ug-views/longchat-message-tools.png)
 
-## Participants
+## Threads
 
-### View Participants
+Choose the curved arrow on a message to open its thread on the right. Type your reply in the thread's box and press **Enter**. A message with replies gets an arrow button beside its three dots; click it to open the thread again. Click the **X** at the top of the thread to close it.
 
-Click the participants button in the toolbar to see everyone in the chat.
+![A thread open beside the chat](/img/ug-views/longchat-thread.png)
 
-### Managing Access
+## Buttons below the chat
 
-Chat access is controlled through the [Sharing](/views/sharing) system:
+- **People icon** (left): lists the people taking part.
+- **Speech bubbles** (second from left): a panel for links to other chats.
+- **Wrench** (right): settings.
 
-- **Control** - Full management including permissions
-- **Read/Write** - Can read and post messages
-- **Read** - Can view messages only
-- **Append** - Can add messages but not read others
+## Settings
 
-## Toolbar
+The wrench opens the settings on the right:
 
-The bottom toolbar provides quick access to:
+- **public link to this chat room** and **private link to this chat room**.
+- Three sets of the same options: **My view of this chat room**, **Everyone's view of this chat room** and **My default view of any chat room**.
 
-- ![Participants](https://solidos.github.io/solid-ui/src/icons/noun_339237.svg) **Participants** - View and manage chat members
-- **Other chats** - Navigate to other chat channels
-- **Settings** - Open preferences panel
+The options are: Color user input by user, Expand image URLs inline, Newest messages at the top, Inline image height (lines), Shift-Enter sends message, Author & date of message on left, and Show placeholders for deleted messages. Click the dash beside an option to turn it on; a tick replaces the dash.
 
-## Data Storage
+![The chat settings](/img/ug-views/longchat-settings.png)
 
-Long Chat stores messages as RDF resources in Turtle format:
+## Who can read the chat
 
-- Messages include author, timestamp, and content
-- Threading information preserved
-- All data stored in your Solid Pod
-- Full ownership and portability of your conversations
+To let other people read or post, use [Manage Access](/views/manage-access).
 
-## Related Views
+## Related views
 
-- [Chat](/views/chat) - Deprecated simple chat (Power Users only)
-- [Meeting](/views/meeting) - Includes chat functionality for meetings
+- [Chat](/views/chat): the short chat used inside meetings.
+- [Meeting](/views/meeting): a meeting can have its own chat tab.
