@@ -12,8 +12,8 @@ This page explains the parts of the SolidOS screen and how to move between thing
 
 The dark bar at the top of every page holds:
 
-- **The Solid logo** (top left). It takes you to the start page of the site you are on. On [mashlib.com](https://mashlib.com/) that is the page with the address field and examples.
-- **The address field** (on mashlib.com). Paste the address of a pod, folder, profile or document and select **Go** to open it.
+- **The Solid logo** (top left). It takes you to the start page of the site you are on. In the [SolidOS Browser](https://solidos.org/docs/browser/) that is the page with the address field and examples.
+- **The address field** (in the SolidOS Browser). Paste the address of a pod, folder, profile or document and select **Go** to open it.
 - **Log In** and **Sign Up**, or, once you are logged in, your picture. Your picture opens the [account menu](login-logout.md#the-account-menu) with Profile, Friends, Storage, Dashboard, Preferences and Sign out.
 - **The help button** (question mark, on pages a pod serves). It opens a menu with **User guide** and **Report a problem**.
 
@@ -21,7 +21,7 @@ The dark bar at the top of every page holds:
 
 ## Opening things
 
-- **Type or paste an address.** On mashlib.com use the address field in the header. On a pod that shows SolidOS, you can also type a folder or profile address straight into your browser's address bar.
+- **Type or paste an address.** In the SolidOS Browser use the address field in the header. On a pod that shows SolidOS, you can also type a folder or profile address straight into your browser's address bar.
 - **Click an item in a folder.** Clicking a folder opens it; clicking anything else opens it in its usual view (a picture for an image, a chat for a chat, a contact list for an address book).
 - **Use the breadcrumb.** Above every folder the path is shown, for example `me / public / ug-basics`. Click any part to go back up to that folder.
 - **Use the back arrow.** When you have opened an item from a folder, a back arrow at the left of the item's header returns you to the folder.
@@ -31,7 +31,7 @@ The dark bar at the top of every page holds:
 While you click through folders and items, the address in the address field (and in your browser) stays at the place you first opened. To get the address of the item you are looking at, open its **More options** menu (the three dots) and choose **Open in New Tab**; the new tab shows the item's own address.
 
 :::note
-Some servers show SolidOS only for folders and data documents. If you open a plain file such as a `.txt` file directly in your browser's address bar, you may see only its contents. Open it from its folder, or through the address field on mashlib.com, to see it in SolidOS.
+Some servers show SolidOS only for folders and data documents. If you open a plain file such as a `.txt` file directly in your browser's address bar, you may see only its contents. Open it from its folder, or through the address field in the SolidOS Browser, to see it in SolidOS.
 :::
 
 ## Choosing a view

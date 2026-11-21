@@ -6,7 +6,7 @@ description: Browsing folders in SolidOS - grid and list views, the folder tree 
 
 # File Explorer
 
-SolidOS shows every folder in a pod in the file explorer. You can see it logged out on any public folder, for example the [test pod's top folder on mashlib.com](https://mashlib.com/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2F).
+SolidOS shows every folder in a pod in the file explorer. You can see it logged out on any public folder, for example the [test pod's top folder in the SolidOS Browser](https://solidos.org/docs/browser/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2F).
 
 ![The file explorer showing the top folder of a pod, with the folder tree on the left](/img/ug-basics/pod-home-folder-tree.png)
 

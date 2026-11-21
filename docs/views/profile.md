@@ -8,7 +8,7 @@ description: View a public profile, and edit your own
 
 A profile is the public page of a person on Solid. Its address is the person's WebID. When you open a WebID, SolidOS shows the Profile view.
 
-![The public profile of the SolidOS test account on mashlib.com](/img/ug-views/profile-public.png)
+![The public profile of the SolidOS test account in the SolidOS Browser](/img/ug-views/profile-public.png)
 
 ## What a profile shows
 
@@ -23,7 +23,7 @@ An empty section says so, for example "No projects added yet."
 
 ![The lower part of the profile, with the QR code](/img/ug-views/profile-public-lower.png)
 
-To try it, open [the test profile on mashlib.com](https://mashlib.com/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2Fprofile%2Fcard%23me). You do not need to log in.
+To try it, open [the test profile in the SolidOS Browser](https://solidos.org/docs/browser/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2Fprofile%2Fcard%23me). You do not need to log in.
 
 ## Show your own profile
 

@@ -22,7 +22,7 @@ The web address that identifies you, for example `https://alice.solidcommunity.n
 
 ### Can I use SolidOS without installing anything?
 
-Yes. Open [mashlib.com](https://mashlib.com/) and paste the address of any pod, folder or profile. Many pod servers also show SolidOS when you open a pod address in your browser.
+Yes. Open the [SolidOS Browser](https://solidos.org/docs/browser/) and paste the address of any pod, folder or profile. Many pod servers also show SolidOS when you open a pod address in your browser.
 
 ## Logging in
 

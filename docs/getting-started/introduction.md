@@ -24,11 +24,11 @@ This guide describes SolidOS 3.1.
 
 Many Solid servers show SolidOS when you open a pod address in your web browser. Which version you get depends on the server.
 
-### From mashlib.com
+### From the SolidOS Browser
 
-[mashlib.com](https://mashlib.com/) runs SolidOS 3.1 and can show any pod. Paste the address of a pod, folder, profile or document into the address field at the top and select **Go**, or pick one of the examples below it.
+The [SolidOS Browser](https://solidos.org/docs/browser/) runs SolidOS 3.1 and can show any pod. Paste the address of a pod, folder, profile or document into the address field at the top and select **Go**, or pick one of the examples below it.
 
-![The mashlib.com start page with an address field and example links](/img/ug-basics/mashlib-start-page.png)
+![The SolidOS Browser start page with an address field and example links](/img/ug-basics/mashlib-start-page.png)
 
 The address of what you are looking at stays in that field, so you can copy it, or change it and select **Go** again.
 
@@ -44,8 +44,8 @@ And this is the top folder of the same pod. The owner's name and picture are sho
 
 You can open both yourself:
 
-- [The test profile on mashlib.com](https://mashlib.com/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2Fprofile%2Fcard%23me)
-- [The test pod's top folder on mashlib.com](https://mashlib.com/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2F)
+- [The test profile in the SolidOS Browser](https://solidos.org/docs/browser/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2Fprofile%2Fcard%23me)
+- [The test pod's top folder in the SolidOS Browser](https://solidos.org/docs/browser/?uri=https%3A%2F%2Ftestingsolidos.solidcommunity.net%2F)
 
 ## Public and private data
 
